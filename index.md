@@ -42,3 +42,61 @@ It integrates most of the Citrix community best practices available on [Carl Sta
     <strong>xd7vda</strong> : Install an optimized Windows 2012R2 SBC or Windows 10 VDI Citrix master image ready for Machine Creation Service deployment.
   </a>
 </div>
+
+## Getting started
+### Step 1 : Install a Puppet Master > 3.8 on your favorite linux distro
+On Ubuntu or Debian, enable the Puppet Package Repository. Example on Ubuntu 14.4 Trusty:
+``` bash
+wget https://apt.puppetlabs.com/puppetlabs-release-trusty.deb
+sudo dpkg -i puppetlabs-release-trusty.deb
+sudo apt-get update
+```
+
+Then, install Puppet on the Puppet Master Server
+``` bash
+sudo apt-get install puppetmaster
+```
+### Step 2 : Configure the Puppet master
+Edit the /etc/puppet/puppet.conf file and replace the content with the following code. Change the reporting URL according to your environment.
+``` bash
+[main]
+logdir=/var/log/puppet
+vardir=/var/lib/puppet
+ssldir=/var/lib/puppet/ssl
+rundir=/var/run/puppet
+factpath=$vardir/lib/facter
+prerun_command=/etc/puppet/etckeeper-commit-pre
+postrun_command=/etc/puppet/etckeeper-commit-post
+
+[master]
+# These are needed when the puppetmaster is run by passenger
+# and can safely be removed if webrick is used.
+ssl_client_header = SSL_CLIENT_S_DN
+ssl_client_verify_header = SSL_CLIENT_VERIFY
+autosign = false
+environment=production
+reports = store, http
+reportsurl = http://puppet.domain-test.com/reports/upload
+trusted_node_data = true
+stringify_facts = false
+```
+
+
+### Step 3 : Clone VirtualDesktopDevops modules on Puppet master
+Clone all the XenDesktop deployment VirtualDesktopDevops modules using git on /etc/puppet/modules directory
+``` bash
+cd /etc/puppet/modules
+git clone https://github.com/virtualdesktopdevops/puppetlabs-dsc.git
+git clone https://github.com/virtualdesktopdevops/sqlserveralwayson.git
+git clone https://github.com/virtualdesktopdevops/xd7mastercontroller.git
+git clone https://github.com/virtualdesktopdevops/xd7slavecontroller.git
+git clone https://github.com/virtualdesktopdevops/xd7licenseserver.git
+git clone https://github.com/virtualdesktopdevops/xd7storefront.git
+git clone https://github.com/virtualdesktopdevops/xd7director.git
+git clone https://github.com/virtualdesktopdevops/xd7vda.git
+```
+
+### Step 4 : Create Puppet manifests for your Citrix XenDesktop infrastructure
+Create the /etc/puppet/manifests/site.pp file.
+
+*Under construction*
