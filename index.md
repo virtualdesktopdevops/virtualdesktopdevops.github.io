@@ -24,25 +24,21 @@ It integrates most of the Citrix community best practices available on [Carl Sta
 ## Puppet modules
 <div class="list-group">
   <a href="https://virtualdesktopdevops.github.io/xd7licenseserver/" class="list-group-item list-group-item-action">
-    <span class="badge badge-pill badge-primary">xd7licenseserver</span> : Module installing and configuring the Citrix and Microsoft licensing servers required for Xendeskop or XenApp enterprise deployment
+    <strong>xd7licenseserver</strong> : Module installing and configuring the Citrix and Microsoft licensing servers required for Xendeskop or XenApp enterprise deployment
   </a>
-</div>
-<div class="list-group">
   <a href="https://virtualdesktopdevops.github.io/xd7mastercontroller/" class="list-group-item list-group-item-action">
-    <span class="badge badge-pill badge-primary">xd7mastercontroller</span> : Install an enterprise production grade Citrix 7.x Delivery Controller, including Citrix site creation and administrator rights setup.
+    <strong>xd7mastercontroller</strong> : Install an enterprise production grade Citrix 7.x Delivery Controller, including Citrix site creation and administrator rights setup.
   </a>
   <a href="https://virtualdesktopdevops.github.io/xd7slavecontroller/" class="list-group-item list-group-item-action">
-    <span class="badge badge-pill badge-primary">xd7slavecontroller</span> : Install a fully working Citrix 7.x Delivery Controller and registers it to an existing XenApp/XenDesktop 7.x site. All the site configuration and database access setup is grabbed from the existing controller.
+    <strong>xd7slavecontroller</strong> : Install a fully working Citrix 7.x Delivery Controller and registers it to an existing XenApp/XenDesktop 7.x site. All the site configuration and database access setup is grabbed from the existing controller.
   </a>
   <a href="https://virtualdesktopdevops.github.io/xd7storefront/" class="list-group-item list-group-item-action">
-    <span class="badge badge-pill badge-primary">xd7storefront</span> : Install a fully working Citrix 7.x Storefront and a default Store. It provides puppet types configuration of additionnal stores as well as Netscaler Gateways for external access.
+    <strong>xd7storefront</strong> : Install a fully working Citrix 7.x Storefront and a default Store. It provides puppet types configuration of additionnal stores as well as Netscaler Gateways for external access.
   </a>
   <a href="https://virtualdesktopdevops.github.io/xd7director/" class="list-group-item list-group-item-action">
-    <span class="badge badge-pill badge-primary">xd7director</span> : Install a Citrix 7.x Director, which provides citrix deployment monitoring capabilities, and links it to the XenApp/XenDesktop site Delivery Controllers. It configures Director for Kerberos SSO login, enhancing security level and speeding access to the monitoring interface.
+    <strong>xd7director</strong> : Install a Citrix 7.x Director, which provides citrix deployment monitoring capabilities, and links it to the XenApp/XenDesktop site Delivery Controllers. It configures Director for Kerberos SSO login, enhancing security level and speeding access to the monitoring interface.
   </a>
   <a href="https://virtualdesktopdevops.github.io/xd7vda/" class="list-group-item list-group-item-action">
-    <span class="badge badge-pill badge-primary">xd7vda</span> : Install an optimized Windows 2012R2 SBC or Windows 10 VDI Citrix master image ready for Machine Creation Service deployment.
+    <strong>xd7vda</strong> : Install an optimized Windows 2012R2 SBC or Windows 10 VDI Citrix master image ready for Machine Creation Service deployment.
   </a>
 </div>
-
-## Getting started
