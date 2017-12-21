@@ -1,6 +1,13 @@
 title: VirtualDesktopDevops
 description: VirtualDesktopDevops federates community integration efforts to build an highly available, secure, and production grade Citrix XenDesktop environment.
 google_site_verification: R71XDERzPOp9lUudi8X6iKrpcoIgDG_1HzRMz_TMaDY
+google_analytics: UA-12767493-6
 theme: jekyll-theme-slate
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-mentions
+jekyll-mentions:
+  base_url: http://www.virtualdesktopdevops.com
