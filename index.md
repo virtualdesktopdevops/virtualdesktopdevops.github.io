@@ -1,5 +1,5 @@
 
-<div align="center">Join us on [http://www.virtualdesktopdevops.com](http://www.virtualdesktopdevops.com)</div>
+<div align="center">Join us on <a href="http://www.virtualdesktopdevops.com">http://www.virtualdesktopdevops.com</a></div>
 
 ## The project
 The VirtualDesktopDevops initiative federates community integration efforts to build an highly available, secure, and production grade Citrix XenDesktopTT environment.
