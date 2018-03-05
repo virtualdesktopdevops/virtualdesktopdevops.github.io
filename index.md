@@ -23,6 +23,9 @@ It integrates most of the Citrix community best practices available on [Carl Sta
 
 ## Puppet modules
 <div class="list-group">
+  <a href="https://virtualdesktopdevops.github.io/sqlserveralwayson/" class="list-group-item list-group-item-action">
+    <strong>sqlserveralwayson</strong> : Puppet module installing a fully working Microsoft SQL Server Always On cluster including : SPN creation, SQL server installation and initial configuration, windows failover cluster and SQL Always On Availability Group creation. 
+  </a>
   <a href="https://virtualdesktopdevops.github.io/xd7licenseserver/" class="list-group-item list-group-item-action">
     <strong>xd7licenseserver</strong> : Module installing and configuring the Citrix and Microsoft licensing servers required for Xendeskop or XenApp enterprise deployment
   </a>
