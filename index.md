@@ -29,11 +29,8 @@ It integrates most of the Citrix community best practices available on [Carl Sta
   <a href="https://virtualdesktopdevops.github.io/xd7licenseserver/" class="list-group-item list-group-item-action">
     <strong>xd7licenseserver</strong> : Module installing and configuring the Citrix and Microsoft licensing servers required for Xendeskop or XenApp enterprise deployment
   </a>
-  <a href="https://virtualdesktopdevops.github.io/xd7mastercontroller/" class="list-group-item list-group-item-action">
-    <strong>xd7mastercontroller</strong> : Install an enterprise production grade Citrix 7.x Delivery Controller, including Citrix site creation and administrator rights setup.
-  </a>
-  <a href="https://virtualdesktopdevops.github.io/xd7slavecontroller/" class="list-group-item list-group-item-action">
-    <strong>xd7slavecontroller</strong> : Install a fully working Citrix 7.x Delivery Controller and registers it to an existing XenApp/XenDesktop 7.x site. All the site configuration and database access setup is grabbed from the existing controller.
+  <a href="https://virtualdesktopdevops.github.io/xd7deliverycontroller/" class="list-group-item list-group-item-action">
+    <strong>xd7deliverycontroller</strong> : Puppet module installing a production grade Citrix XenDesktop 7.x Delivery Controller, including Citrix XenDesktop site creation, high availability configuration, and administrator rights setup.
   </a>
   <a href="https://virtualdesktopdevops.github.io/xd7storefront/" class="list-group-item list-group-item-action">
     <strong>xd7storefront</strong> : Install a fully working Citrix 7.x Storefront and a default Store. It provides puppet types configuration of additionnal stores as well as Netscaler Gateways for external access.
@@ -94,8 +91,7 @@ Clone all the XenDesktop deployment VirtualDesktopDevops modules using git on /e
 cd /etc/puppet/modules
 git clone https://github.com/virtualdesktopdevops/puppetlabs-dsc.git
 git clone https://github.com/virtualdesktopdevops/sqlserveralwayson.git
-git clone https://github.com/virtualdesktopdevops/xd7mastercontroller.git
-git clone https://github.com/virtualdesktopdevops/xd7slavecontroller.git
+git clone https://github.com/virtualdesktopdevops/xd7deliverycontroller.git
 git clone https://github.com/virtualdesktopdevops/xd7licenseserver.git
 git clone https://github.com/virtualdesktopdevops/xd7storefront.git
 git clone https://github.com/virtualdesktopdevops/xd7director.git
